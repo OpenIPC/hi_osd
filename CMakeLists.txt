@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 2.8)
 project(hi_osd C)
 
-set(CROSS_COMPILE "arm-himix100-linux-")
+if ("${CROSS_COMPILE}" STREQUAL "")
+    set(CROSS_COMPILE "arm-himix100-linux-")
+endif()
 
 set(CMAKE_AR ${CROSS_COMPILE}ar)
 set(CMAKE_C_COMPILER ${CROSS_COMPILE}gcc)
