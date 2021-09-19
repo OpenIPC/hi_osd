@@ -181,10 +181,10 @@ HI_S32 CREATE_REGION(HI_S32 ChannelNum, HI_S32 HandleNum, int x,int y,int width,
 
     stRegion.enType = OVERLAY_RGN;
     #ifdef __16CV300__
-    stRegion.unAttr.stOverlay.stSize.u32Height = 64;
+    stRegion.unAttr.stOverlay.stSize.u32Height = 48;
     stRegion.unAttr.stOverlay.stSize.u32Width  = 512;
     #else
-    stRegion.unAttr.stOverlay.stSize.u32Height = 64;
+    stRegion.unAttr.stOverlay.stSize.u32Height = 48;
     stRegion.unAttr.stOverlay.stSize.u32Width  = 512;
     #endif
     stRegion.unAttr.stOverlay.u32CanvasNum = 2;
